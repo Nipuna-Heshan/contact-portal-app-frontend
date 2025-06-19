@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .custom-button {
+    @apply px-6 w-1/5 my-10 py-2 rounded bg-customBlue text-white border rounded-2xl border-white hover:bg-white hover:text-customBlue hover:border-customBlue;
+  }
+
+  .custom-button-white {
+    @apply px-6 w-1/5 my-10 py-2 rounded bg-white text-customBlue border rounded-2xl border-customBlue hover:bg-customBlue hover:text-white hover:border-customBlue;
+  }
+  .custom-input{
+    @apply md:w-8/12 lg:w-10/12 xl:w-11/12 rounded-3xl h-10 py-6 px-8 my-2 mr-5 text-customBlue placeholder-customBlue
+  }
+  .genderInput{
+    @apply w-16 text-center m-2 bg-white
+  }
+  .nameInput{
+    @apply w-32 text-center m-2 bg-white
+  }
+  .emailInput{
+    @apply w-48 text-center m-2 bg-white
+  }
+  .numberInput{
+    @apply w-24 text-center m-2 bg-white
+  }
+}
+
+:root{
+  font-size: 1.3rem;
+}
+
+
+.bg-fixed-cover {
+  background-image: url('assets/bg-img-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: sticky;
+
+}
+
+.bg-fixed-cover-2 {
+  background-image: url('assets/bg-img-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.cdk-overlay-container{
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+}
+
