@@ -2,12 +2,12 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "pnpm",
+    "packageManager": "npm",
     "analytics": false
   },
   "newProjectRoot": "projects",
   "projects": {
-    "twc-test-angular": {
+    "cpa-test-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "twc-test-angular:build:production"
+              "buildTarget": "cpa-test-angular:build:production"
             },
             "development": {
-              "buildTarget": "twc-test-angular:build:development"
+              "buildTarget": "cpa-test-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "twc-test-angular:build"
+            "buildTarget": "cpa-test-angular:build"
           }
         },
         "test": {
